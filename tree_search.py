@@ -170,20 +170,6 @@ def performTreeSearch(functions, numbers, messages):
         print(messages[1] +  str(numbers[i]) + " was " + \
               ("not " if not DFSBinary(n5, functions[i]) else "")  + "found.\n")
 
-# functions = [find6, find10, find2]
-# numbers = [6, 10, 2]
-# # DFS
-# messages = ["Depth First Search\n", "DFS: "]
-# performTreeSearch(functions, numbers, messages)
-# print("=====================")
-# # BFS
-# messages = ["Breadth first search", "BFS: "]
-# performTreeSearch(functions, numbers, messages)
-# print("=====================")
-# # DFSOrdered
-# print("Depth First Search Ordered\n")
-# print("DFS Ordered", DFSBinaryOrdered(n5, find6, lt6))
-
 print("DFS path")
 pathTo6 = DFSBinaryPath(n5, find6)
 nodes = [e.get_value() for e in pathTo6]
